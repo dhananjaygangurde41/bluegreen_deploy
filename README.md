@@ -3,5 +3,8 @@ upstream backend {
     server blue_app:5000 or server green_app:5000
     docker exec nginx_lb nginx -s reload
 
-    this will move taffic to blue app only or Green app only  
+    make changes here -----  upstream backend {
+    server blue_app:5000 or server green_app:5000
+    restart nginx -----  docker exec nginx_lb nginx -s reload
+    ====this will move taffic to blue app only or Green app only ==== 
     
